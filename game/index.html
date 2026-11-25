@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Serve — a tiny kitchen rush game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1d12; height: 100%; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center;
+         font-family: "Trebuchet MS", Verdana, sans-serif; }
+  #wrap { position: relative; width: 1280px; height: 720px; max-width: 100vw; max-height: 100vh; }
+  canvas { display: block; width: 100%; height: 100%; background: #f6e3c0;
+           border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,.55); }
+  #hint { position: absolute; left: 0; right: 0; bottom: -26px; text-align: center;
+          color: #e8cfa5; font-size: 13px; letter-spacing: .4px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">WASD / arrows to move &middot; E to interact &middot; hold E to chop &middot; click a station to use it &middot; R to restart</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
